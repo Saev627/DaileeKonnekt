@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg-color);
+    width: 100%;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 5%;
+    height: 700px;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin: 0 0 0 -120px;
+    padding: 5px;
+}
+.material-icons, .material-symbols-outlined {
+    color: var(--icon);
+    font-size: 30px;
+    transition: color 400ms ease-in-out;
+}
+
+    .material-icons:hover, .material-symbols-icon {
+        color: white;
+    }

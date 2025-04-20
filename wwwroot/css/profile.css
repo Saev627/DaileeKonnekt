@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-color);
+    height: 100%
+}
+.Hero {
+    display: flex;
+    gap: 20px;
+    width: 45vw;
+    border-left: 1px solid var(--border);
+    justify-content: center;
+    margin-left: 5%;
+}
+.SubHero {
+    display: flex;
+    flex-direction: column;
+    margin-right: -800px;
+    width: 35vw;
+    margin-top: 20px;
+}
+
+
+.HeroProfile{
+    margin-top: 20px;
+    margin-left: -100px;
+    width: 15%;
+}
+
+.HeroContent {
+    margin-top: 20px;
+    margin-left: -20px;
+    width: 70%;
+    height: 100%;
+}
+
+.circle {
+    padding: 10px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    margin-left: -90px;
+    background-color: white;
+}
+
+.Personal h6{
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.Personal .container {
+    display: flex;
+    width: 40%;
+    margin-left: 0;
+    margin-bottom: -10px;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.Personal p{
+    font-size: 13px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 200;
+}
+.Personal p span{
+    margin-left: 150px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #edf0f7   ;
+    margin: 10px 0;
+    width: 80%;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.detail-label {
+    color: #a0a0a0;
+}
+
+.detail-value {
+    text-align: right;
+    font-weight: 500;
+}
+
+.verified {
+    color: #4CAF50;
+}
+
+.button {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button-subscribed {
+    background-color: #6200ea;
+    color: white;
+}
+
+.button-enabled {
+    background-color: #2196F3;
+    color: white;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    background-color: #1E1E1E;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+    .logout-btn:hover{
+        background-color: #333;
+        color: #6200EA !important;
+    }
+
+    .logout-btn .material-icons {
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 17px;
+    }

@@ -1,0 +1,158 @@
+body {
+    background: var(--bg-color);
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 20px;
+}
+.Hero{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.login-container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.input-field {
+    width: 100%;
+    background-color: #262626;
+    border: none;
+    border-radius: 4px;
+    padding: 14px 12px;
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+    .input-field::placeholder {
+        color: #8e8e8e;
+    }
+
+.login-btn {
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    padding: 14px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.forgot-password {
+    color: #a8a8a8;
+    font-size: 12px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #363636;
+}
+
+.divider-text {
+    color: #a8a8a8;
+    padding: 0 18px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.instagram-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #262626;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+}
+
+.instagram-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-logo-inner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid white;
+    border-radius: 4px;
+    position: relative;
+}
+
+    .instagram-logo-inner::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border: 2px solid white;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .instagram-logo-inner::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background-color: white;
+        border-radius: 50%;
+        top: 2px;
+        right: 2px;
+    }
+
+.arrow-icon {
+    position: absolute;
+    right: 16px;
+    font-size: 18px;
+    color: #a8a8a8;
+}
+
+</style >

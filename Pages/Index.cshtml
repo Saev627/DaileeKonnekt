@@ -1,0 +1,48 @@
+﻿@page
+@model Dailee_Konnekt.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    ViewData["ExcludeNav"] = true;
+}
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/auth.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/global.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="Hero">
+    <div class="login-container">
+            <h1>Log in with Dailee_Konnekt</h1>
+
+        <form method="post">
+            <input type="text" class="input-field" placeholder="Username, phone or email" asp-for="Username">
+            <input type="password" class="input-field" placeholder="Password" asp-for="Password">
+
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+                <p class="error-message">@Model.ErrorMessage</p>
+            }
+
+            <button type="submit" class="login-btn">Log in</button>
+        </form>
+
+        <a href="#" class="forgot-password">Forgot password?</a>
+
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-text">or</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <button class="instagram-btn">
+            <div class="instagram-logo">
+                <div class="instagram-logo-inner"></div>
+            </div>
+            Continue with Instagram
+            <span class="arrow-icon">›</span>
+        </button>
+    </div>
+   </div>
+</body>

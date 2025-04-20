@@ -1,0 +1,183 @@
+﻿@page
+@model ProfileModel
+@{
+}
+<head>
+    <link rel="stylesheet" href="~/css/global.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/settings.css" asp-append-version="true" />
+
+
+</head>
+
+<body>
+    <div class="Hero">
+        <div class="container">   
+            <div class="profile-header">
+                <div class="profile-info">
+                    <h1>Username</h1>
+                    <div class="profile-username">
+                        <span>this_is_Username</span>
+                        <span class="dot">·</span>
+                        <span>Dailee_Konnekt.net</span>
+                    </div>
+                    <div class="profile-bio">
+                        <p>Developer.</p>
+                    </div>
+                    <div class="profile-followers">2,860 followers</div>
+                </div>
+                @* <img src="https://via.placeholder.com/80" alt="Profile picture" class="profile-avatar"> *@
+                <div class="circle"></div>
+
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn">Follow</button>
+                <button class="btn">Mention</button>
+            </div>
+
+        
+            <div class="tabs">
+                <div class="tab active">Threads</div>
+                <div class="tab">Replies</div>
+                <div class="tab">Reposts</div>
+            </div>
+  
+            <div class="tab-content active">
+
+                <div class="post">
+                    <div class="post-header">
+                        @* <img src="https://via.placeholder.com/40" alt="Profile picture" class="post-avatar"> *@
+                        <div class="inner-circle"></div>
+                        <div class="post-content">
+                            <div class="post-author-info">
+                                <div class="post-author">
+                                    <span class="post-username">Username</span>
+                                    <span class="post-time">1d</span>
+                                </div>
+                                <button class="post-more">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12C18 12.5523 18.4477 13 19 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="post-text">
+                                <p>March has been great for sales of my newest release Last Outlaw with a paperback being shipped in Sweden</p>
+                            </div>
+
+                         
+                            <div class="sales-table">
+                                <div class="sales-table-inner">
+                                    <div class="table-header">
+                                        <div>Title</div>
+                                        <div>Digital</div>
+                                        <div>Print</div>
+                                        <div>Total Units</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="book-title">
+                                            <div class="book-cover"></div>
+                                            <span>Last Outlaw</span>
+                                        </div>
+                                        <div>19</div>
+                                        <div>1</div>
+                                        <div>20</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="country">
+                                            <span>🇺🇸</span>
+                                            <span>United States</span>
+                                        </div>
+                                        <div>16</div>
+                                        <div>0</div>
+                                        <div>16</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="country">
+                                            <span>🇬🇧</span>
+                                            <span>United Kingdom</span>
+                                        </div>
+                                        <div>3</div>
+                                        <div>0</div>
+                                        <div>3</div>
+                                    </div>
+                                    <div class="table-row">
+                                        <div class="country">
+                                            <span>🇸🇪</span>
+                                            <span>Sweden</span>
+                                        </div>
+                                        <div>0</div>
+                                        <div>1</div>
+                                        <div>1</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                         
+                            <div class="post-actions">
+                                <button class="action-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 10V16M12 7V16M17 13V16M6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>17</span>
+                                </button>
+                                <button class="action-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>1</span>
+                                </button>
+                                <button class="action-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 1L21 5M21 5L17 9M21 5H7C4.79086 5 3 6.79086 3 9V15M7 23L3 19M3 19L7 15M3 19H17C19.2091 19 21 17.2091 21 15V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>1</span>
+                                </button>
+                                <button class="action-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.68387 13.3419L15.3161 10.6581M8.68387 13.3419C8.88616 13.7937 8.68923 14.3312 8.23742 14.5335L4.95731 16.0664C4.04922 16.5034 3 15.8337 3 14.8354V6.91218C3 6.40183 3.40184 6 3.91218 6H20.0878C20.5982 6 21 6.40184 21 6.91218V14.8354C21 15.8337 19.9508 16.5034 19.0427 16.0664L15.7626 14.5335C15.3108 14.3312 15.1138 13.7937 15.3161 13.3419L8.68387 13.3419Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <div class="empty-state">
+                    <p style">No replies yet</p>
+                </div>
+            </div>
+
+            <div class="tab-content">
+                <div class="empty-state">
+                    <p>No reposts yet</p>
+                </div>
+            </div>
+
+         
+        </div>
+        <script>
+           //For tabs
+            document.addEventListener('DOMContentLoaded', function() {
+              const tabs = document.querySelectorAll('.tab');
+              const tabContents = document.querySelectorAll('.tab-content');
+
+              tabs.forEach((tab, index) => {
+                tab.addEventListener('click', () => {
+                 
+                  tabs.forEach(t => t.classList.remove('active'));
+                  tabContents.forEach(c => c.classList.remove('active'));
+
+              
+                  tab.classList.add('active');
+                  tabContents[index].classList.add('active');
+                });
+              });
+            });
+        </script>
+        
+    </div>
+</body>

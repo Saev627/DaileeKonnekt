@@ -1,0 +1,85 @@
+﻿@page
+@model Dailee_Konnekt.Pages.MessageModel
+@{
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/msg.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/global.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="Hero">
+        <div class="messages">
+            <div class="search-bar">
+                <input type="text" placeholder="Search messages...">
+            </div>
+            <div class="message-list">
+                <div class="message-item active">
+                    <div class="avatar"></div>
+                    <div class="message-info">
+                        <h6>Username</h6>
+                        <p>Random chat here!</p>
+                    </div>
+                  
+                </div>
+                <hr>
+                <div class="message-item">
+                    <div class="avatar"></div>
+                    <div class="message-info">
+                        <h6>Username</h6>
+                        <p>Random chat here!</p>
+                    </div>
+                  
+                </div>
+                <hr>
+                <div class="message-item">
+                    <div class="avatar"></div>
+                    <div class="message-info">
+                        <h6>Username</h6>
+                        <p>Random chat here!</p>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="message-item">
+                    <div class="avatar"></div>
+                    <div class="message-info">
+                        <h6>Username</h6>
+                        <p>Random chat here!</p>
+                    </div>
+
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="chats">
+            <div class="chat-header">
+                <div class="avatar"></div>
+                <h4>Username here</h4>
+            </div>
+            <div class="chat-body">
+                <div class="chat-message received">
+                    <p>Hi Greetings Username, thank you for the reminder!
+                    <br />I'll see yah around then.</p>
+                </div>
+                <div class="chat-message sent">
+                    <p>Hello Username, I actually wanted to let you know
+                     <br /> about this as well.</p>
+                </div>
+
+                <div class="chat-message received">
+                    <p>
+                        Hey Username, I appreciate you reaching out!
+                        <br /> That sounds great. Let me know if there's
+                        <br /> anything else you need. Talk soon!
+                    </p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" placeholder="Type a message...">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+</body>
