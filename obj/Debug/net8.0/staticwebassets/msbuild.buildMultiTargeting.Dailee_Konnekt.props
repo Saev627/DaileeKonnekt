@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Dailee_Konnekt.props" />
+</Project>
